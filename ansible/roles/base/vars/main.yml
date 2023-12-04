@@ -19,6 +19,11 @@ additional_packages:
     - net-tools
     - unzip
     - wget
+    - at
+    - bzip2
+    - dirmngr
+    - aptitude
+    - parted
   RedHat:
     - ca-certificates
     - curl

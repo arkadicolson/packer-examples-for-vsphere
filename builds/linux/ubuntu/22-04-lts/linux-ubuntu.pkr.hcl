@@ -1,4 +1,4 @@
-# Copyright 2023 Broadcom. All rights reserved.
+# Copyright 2023 VMware, Inc. All rights reserved
 # SPDX-License-Identifier: BSD-2
 
 /*
@@ -58,7 +58,7 @@ locals {
     })
   }
   data_source_command = var.common_data_source == "http" ? "ds=\"nocloud-net;seedfrom=http://{{.HTTPIP}}:{{.HTTPPort}}/\"" : "ds=\"nocloud\""
-  vm_name             = "${var.vm_guest_os_family}-${var.vm_guest_os_name}-${var.vm_guest_os_version}-${local.build_version}"
+  vm_name             = "ubuntu22amd64"
   bucket_name         = replace("${var.vm_guest_os_family}-${var.vm_guest_os_name}-${var.vm_guest_os_version}", ".", "")
   bucket_description  = "${var.vm_guest_os_family} ${var.vm_guest_os_name} ${var.vm_guest_os_version}"
 }

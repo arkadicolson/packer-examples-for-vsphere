@@ -1,4 +1,4 @@
-# Copyright 2023 Broadcom. All rights reserved.
+# Copyright 2023 VMware, Inc. All rights reserved
 # SPDX-License-Identifier: BSD-2
 
 /*
@@ -7,15 +7,15 @@
 */
 
 // Guest Operating System Metadata
-vm_guest_os_language = "en_US"
-vm_guest_os_keyboard = "us"
-vm_guest_os_timezone = "UTC"
+vm_guest_os_language = "en_US.UTF-8"
+vm_guest_os_keyboard = "be"
+vm_guest_os_timezone = "Europe/Brussels"
 vm_guest_os_family   = "linux"
-vm_guest_os_name     = "debian"
-vm_guest_os_version  = "11.8"
+vm_guest_os_name     = "ubuntu"
+vm_guest_os_version  = "Guest"
 
 // Virtual Machine Guest Operating System Setting
-vm_guest_os_type = "other5xLinux64Guest"
+vm_guest_os_type = "ubuntu64Guest"
 
 // Virtual Machine Hardware Settings
 vm_firmware              = "efi-secure"
@@ -31,7 +31,7 @@ vm_disk_thin_provisioned = true
 vm_network_card          = "vmxnet3"
 
 // Removable Media Settings
-iso_path = "iso/linux/debian"
+iso_path = "/"
 iso_file = "debian-11.8.0-amd64-netinst.iso"
 
 // Boot Settings

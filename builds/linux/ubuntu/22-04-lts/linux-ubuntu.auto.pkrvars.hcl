@@ -1,4 +1,4 @@
-# Copyright 2023 Broadcom. All rights reserved.
+# Copyright 2023 VMware, Inc. All rights reserved
 # SPDX-License-Identifier: BSD-2
 
 /*
@@ -8,9 +8,9 @@
 */
 
 // Guest Operating System Metadata
-vm_guest_os_language = "en_US"
-vm_guest_os_keyboard = "us"
-vm_guest_os_timezone = "UTC"
+vm_guest_os_language = "en_US.UTF-8"
+vm_guest_os_keyboard = "be"
+vm_guest_os_timezone = "Europe/Brussels"
 vm_guest_os_family   = "linux"
 vm_guest_os_name     = "ubuntu"
 vm_guest_os_version  = "22.04-lts"
@@ -32,7 +32,7 @@ vm_disk_thin_provisioned = true
 vm_network_card          = "vmxnet3"
 
 // Removable Media Settings
-iso_path = "iso/linux/ubuntu"
+iso_path = "/"
 iso_file = "ubuntu-22.04.3-live-server-amd64.iso"
 
 // Boot Settings

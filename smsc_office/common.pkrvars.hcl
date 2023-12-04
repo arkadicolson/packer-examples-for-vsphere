@@ -13,9 +13,9 @@ common_tools_upgrade_policy = true
 common_remove_cdrom         = true
 
 // Template and Content Library Settings
-common_template_conversion         = true
+common_template_conversion         = false
 common_content_library_name        = "packer"
-common_content_library_ovf         = false
+common_content_library_ovf         = true
 common_content_library_destroy     = true
 common_content_library_skip_export = true
 
